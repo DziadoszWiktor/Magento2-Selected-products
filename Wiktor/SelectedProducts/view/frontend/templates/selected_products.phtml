@@ -1,0 +1,18 @@
+<?php
+
+use Wiktor\SelectedProducts\Block\SelectedProductsCollection;
+
+/**
+ * @var $block SelectedProductsCollection
+ */
+$products = $block->getProducts();
+?>
+<ul>
+    <?php foreach ($products as $product) :?>
+        <li>
+            <p><?= $product->getName()?></p>
+        </li>
+    <?php endforeach; ?>
+</ul>
+
+

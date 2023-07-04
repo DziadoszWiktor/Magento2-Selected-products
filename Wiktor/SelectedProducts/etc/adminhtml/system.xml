@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wiktor" translate="label" sortOrder="10">
+            <label>Wiktor</label>
+        </tab>
+        <section id="selected_products" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Selected Products</label>
+            <tab>wiktor</tab>
+            <resource>Wiktor_SelectedProducts::selected_products_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>General Configuration</label>
+                <field id="selected_products_list" translate="label" type="text" sortOrder="10" showInDefault="1">
+                    <label>List of selected product IDs</label>
+                    <comment>Insert selected product IDs e.g. "1, 2, 3"</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
